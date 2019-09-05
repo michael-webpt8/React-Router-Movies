@@ -30,7 +30,7 @@ const Movie = props => {
   }
 
   const { title, director, metascore, stars } = movie;
-  console.log(title, director, metascore, stars);
+
   if (movie !== undefined) {
     return (
       <div className="save-wrapper">

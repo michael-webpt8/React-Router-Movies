@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Movie = props => {
-  const [movie, setMovie] = useState();
+  const [movie, setMovie] = useState({
+    title: '',
+    director: '',
+    metascore: '',
+    stars: []
+  });
 
   useEffect(() => {
     const id = props.match.params.id;
